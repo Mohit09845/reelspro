@@ -60,6 +60,6 @@ const videoSchema = new Schema<IVideo>({
     }
 },{timestamps: true})
 
-const User = mongoose.models?.Video || mongoose.model<IVideo>("Video",videoSchema);   
+const Video = mongoose.models?.Video || mongoose.model<IVideo>("Video",videoSchema);   
 
-export default User;
+export default Video;
